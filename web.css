@@ -1,0 +1,246 @@
+.mainContainer{
+    position:relative;
+    top:0px;
+    height:123px;
+    text-align:center;
+    color:white;
+    padding:15px;
+    background-image: linear-gradient(to right,#34e89e,#0f3443);
+}
+#navBar{
+    background-image: linear-gradient(to right,#34e89e,#0f3443);
+    height:100px;
+    z-index:2;
+}
+.displayC{
+    display:none;
+}
+#Home{
+    width:100%;
+}
+.homeimg{
+    height:50px;
+    width:50px;
+    border-radius:30px;
+    float:left;
+}
+.mainHead{
+    font-family:"Roboto";
+    font-size:34px;
+    float:center;
+}
+.navContainer{
+    height:100px;
+    padding:15px;
+}
+#main #first{
+    margin-left:30%;
+}
+#main li{
+    float:right;
+}
+.navContainer>a{
+    float:right;
+    text-decoration:none;
+    padding:10px;
+    border-radius:5px;
+    font-size:20px;
+    font-family:"Roboto";
+
+}
+@media only screen and (max-width:600px){
+    .navContainer>a{
+        display:block;
+        border-width:0px;
+    }
+    .navContainer{
+        height:135px;
+    }
+}
+.footer-img{
+    height: 60px;
+    width:60px;
+    border-radius:10px;
+    float:right;
+    margin-right:8px;
+}
+
+.main-footer{
+    background-image:linear-gradient(to right,#34e89e,#0f3443);
+    color:white;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:8%;
+    padding:5px;
+    z-index:3;
+}
+#leftMain{
+    z-index:1;
+}
+.main-footer p{
+    display:inline;
+    text-align:center;
+}
+.main-footer a{
+    float:right;
+    position:relative;
+    bottom:20px;
+    margin-right:50px;
+    margin-top:0%;
+}
+.imgS{
+    height:20px;
+    width:40px;
+}
+.logininfo{
+    font-family:Verdana;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+
+}
+.logincontainer{
+    position:fixed;
+    text-align: center;
+    background-color:#faf3f3;
+    height:500px;
+    width:100%;
+    padding:10px;
+
+}
+.btn{
+    border:1px solid black;
+    background-color:grey;
+    padding:10px;
+    color:white;
+    font-family:Verdana,Tahoma, sans-serif;
+    border-radius:5px;
+}
+.p{
+    font-family:Verdana;
+    font-size:20px;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+ul#main li{
+    width:126px;
+    position:relative;
+    float:left;
+    text-align: center;
+    list-style-type: none;
+    margin:5px 100px 0px 5px;
+    line-height: 20px;
+}
+ul#main ul.sub1{
+    margin-left:50px;
+    /*position:absolute;
+    top:36px;
+    left:0px;*/
+    display:none;
+}
+.sub11{
+    margin-left:50px;
+    display:none;
+}
+.sub111{
+    margin-left:50px;
+    display:none;
+}
+ul#main li{
+    z-index:999;
+}
+ul#main a{
+    display:block;
+    font-family:"Roboto";
+    font-size:20px;
+    color:rgb(24, 39, 105);
+    text-decoration: none;
+    border:"2px solid red"; 
+    background-color:aqua;
+    border-radius:5px;
+    padding:10px;
+    
+}
+ul#main li:hover a:hover{
+    background-color:rgb(164, 219, 164);
+    border:2px solid white;
+}
+ul#main li:hover .sub1{
+    display:block;
+
+}
+ul#main li:hover>a{
+    background-color:#9ad9f1;
+}
+
+ul#main .sub1 li:hover .sub11{
+    display:block;
+}
+ul#main .sub11 li:hover .sub111{
+    display:block;
+}
+#leftMain{
+    position:fixed;
+    left:0px;
+    background-color:#317e9c;
+    float:left;
+    width:25%;
+    height:80vh;
+}
+#rightMain{
+    position:fixed;
+    right:0px;
+}
+#midMain{
+    border-right:3px solid white;
+    border-left:3px solid white;
+    position:fixed;
+    left:25%;
+    width:50%;
+    height:80vh;
+    z-index:0;
+}
+#form input{
+    margin-top:60px;
+    margin-left:10px;
+    color:white;
+    font-family:'Times New Roman';
+    font-size:18px;
+}
+#rightMain{
+    float:right;
+    width:25%;
+    background-color: #1d5a72;
+    height:80vh;
+    overflow:hidden;
+
+}
+#midMain img{
+    height:520px;
+}
+#marq a{
+    color:white;
+    font-family: "Roboto";
+    font-weight:bold;
+    font-size:18px;
+}
+#list li{
+    color:white;
+    font-family:"Roboto";
+    padding:4px;
+    margin-left:20px;
+}
+.regPage{
+    margin-bottom:100px;
+    position:fixed;
+    left:360px;
+}
+#infoPage{
+    position:fixed;
+    left:400px;
+}
