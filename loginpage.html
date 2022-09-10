@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="web.css">
-        <style>
-        </style>
-        <title>Login Page</title>
-    </head>
-    <body style="text-align:center;margin:auto">
-        <div id="Home" style="background-image: linear-gradient(to bottom,#34e89e,#0f3443);">
-            <div class="mainContainer">
-                <img class="homeimg" src="myprofile.jpg" style="height:100px;width:100px;">
-                <b class="mainHead">Home Page</b>
-                <img class="homeimg" style="float:right;" src="lines.png" onclick="display()">
-                <div class="navContainer" id="navitems">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N180290</title>
+    <link rel="icon" href="profile.png">
+    <link rel="stylesheet" href="web.css">
+    <meta name="description" content="Indian Premier League which is played by all the cricketers from all countries">
+    <meta name="author" content="Prema Jyothi">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="Home" style="background-image: linear-gradient(to left,#34e89e,#0f3443);">
+        <div class="mainContainer">
+            <img class="homeimg" src="myprofile.jpg" style="height:100px;width:100px;">
+            <b class="mainHead">Home Page</b>
+            <img class="homeimg" style="float:right;" src="lines.png" onclick="displayE()">
+        </div>
+        <div id="navBar" class="displayC">
+            <div class="navContainer" id="navitems">
                 <ul id="main">
-                    <li><a href="website.html">Home</a></li>
-                    <li><a href="#">Branches</a>
+                    <li id="first"><a href="someMain.html">Home</a></li>
+                    <li><a href="#">Branches &rarr;</a>
                     <ul class="sub1" >
-                    <li><a href="">CSE</a>
+                    <li><a href="">CSE &rarr;</a>
                         <ul class="sub11" >
                             <li><a href="">Student</a>
                             </li>
@@ -26,7 +36,7 @@
                         </ul>
                     </li>
                     
-                    <li><a href="">ECE</a>
+                    <li><a href="">ECE &rarr;</a>
                         <ul class="sub11">
                             <li><a href="">Student</a>
                             </li>
@@ -34,7 +44,7 @@
                             </li>  
                         </ul>
                     </li>
-                    <li><a href="">MECH</a>
+                    <li><a href="">MECH &rarr;</a>
                         <ul class="sub11">
                             <li><a href="">Student</a>
                             </li>
@@ -44,7 +54,7 @@
                     </li>
                 </ul>
                     </li>
-                    <li><a href="">Exam</a>
+                    <li><a href="">Exam &rarr;</a>
                         <ul class="sub1">
                             <li><a href="validForm.html">Register</a></li>
                             <li><a href="loginpage.html">Login</a></li>
@@ -53,24 +63,27 @@
                     <li><a href="gmap.html">Contact Us</a></li>
                 </ul>
             </div>
-            </div>
+        </div>
         <div class="logincontainer">
-            <h1 style="margin-top:20px;">Login Page</h1><br>
+             <h1 style="margin-top:20px;">Login Page</h1><br>
             <p>Enter Name : <input type="text" id="namelogin"></p><br>
             <p>Password : <input type="text" id="loginpassw"></p><br>
             <button class="btn" onclick="validDetails()">Sign UP</button>
             <p class="p" id="success" style="color:green;font-weight:bold;visibility:hidden;">Login Successfull!!!</p>
             <p class="p" id="failed" style="color:red;font-weight:bold;visibility:hidden;">Login Failed!!!</p>
             <p class="p" >If You are not registered <a href="validForm.html">click here </a>  to register</p>
-            
-        </div>
+                        
+            </div>
+
         <div class="main-footer">
-            <center><p style="margin-top:5px; display:inline;">&copy; developed by Prema Jyothi</p>
+            <center><p style="margin-top:5px; display:inline;">&copy; developed by Prema</p>
             </center>
             <a href="https://www.hitwebcounter.com" target="_blank">
             <img src="https://hitwebcounter.com/counter/counter.php?page=8013715&style=0049&nbdigits=5&type=page&initCount=3" title="Free Counter" Alt="web counter"   border="0" /></a>                 
 
         </div>
-        <script src="formv.js"></script>
-    </body>
+    </div>
+    <script src="work.js"></script>
+    <!-- <script type="text/javascript" src="formv.js"></script> -->
+</body>
 </html>

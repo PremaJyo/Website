@@ -5,3 +5,7 @@ function navItemsDisplay(){
     console.log("Good");
 
 }
+function displayE(){
+    document.getElementById("navBar").classList.toggle('displayC');
+}
+
