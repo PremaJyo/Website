@@ -1,14 +1,19 @@
 .mainContainer{
     position:relative;
     top:0px;
-    height:150px;
+    height:123px;
     text-align:center;
-    width:97%;
     color:white;
-    padding:20px;
+    padding:15px;
     background-image: linear-gradient(to right,#34e89e,#0f3443);
-    overflow:hidden;
-    z-index:12;
+}
+#navBar{
+    background-image: linear-gradient(to right,#34e89e,#0f3443);
+    height:100px;
+    z-index:2;
+}
+.displayC{
+    display:none;
 }
 #Home{
     width:100%;
@@ -27,19 +32,21 @@
 .navContainer{
     height:100px;
     padding:15px;
-    display:none;
-    z-index:4;
+}
+#main #first{
+    margin-left:30%;
+}
+#main li{
+    float:right;
 }
 .navContainer>a{
     float:right;
     text-decoration:none;
     padding:10px;
     border-radius:5px;
-    border-right:1px solid white;
-    margin-right:10px;
     font-size:20px;
     font-family:"Roboto";
-    z-index:5;
+
 }
 @media only screen and (max-width:600px){
     .navContainer>a{
@@ -57,6 +64,7 @@
     float:right;
     margin-right:8px;
 }
+
 .main-footer{
     background-image:linear-gradient(to right,#34e89e,#0f3443);
     color:white;
@@ -64,8 +72,12 @@
     bottom:0px;
     left:0px;
     width:100%;
-    height:5%;
+    height:8%;
     padding:5px;
+    z-index:3;
+}
+#leftMain{
+    z-index:1;
 }
 .main-footer p{
     display:inline;
@@ -86,9 +98,12 @@
     font-family:Verdana;
     font-size:20px;
     font-weight:bold;
+    text-align:center;
 
 }
 .logincontainer{
+    position:fixed;
+    text-align: center;
     background-color:#faf3f3;
     height:500px;
     width:100%;
@@ -118,7 +133,7 @@ ul#main li{
     float:left;
     text-align: center;
     list-style-type: none;
-    margin:5px 150px 0px 5px;
+    margin:5px 100px 0px 5px;
     line-height: 20px;
 }
 ul#main ul.sub1{
@@ -136,6 +151,9 @@ ul#main ul.sub1{
     margin-left:50px;
     display:none;
 }
+ul#main li{
+    z-index:999;
+}
 ul#main a{
     display:block;
     font-family:"Roboto";
@@ -146,18 +164,18 @@ ul#main a{
     background-color:aqua;
     border-radius:5px;
     padding:10px;
-    z-index:10;
+    
 }
 ul#main li:hover a:hover{
     background-color:rgb(164, 219, 164);
-    border:2px solid black;
+    border:2px solid white;
 }
 ul#main li:hover .sub1{
     display:block;
 
 }
 ul#main li:hover>a{
-    background-color:pink;
+    background-color:#9ad9f1;
 }
 
 ul#main .sub1 li:hover .sub11{
@@ -167,20 +185,22 @@ ul#main .sub11 li:hover .sub111{
     display:block;
 }
 #leftMain{
-    position:relative;
-    top:0px;
+    position:fixed;
+    left:0px;
     background-color:#317e9c;
     float:left;
     width:25%;
     height:80vh;
 }
-
+#rightMain{
+    position:fixed;
+    right:0px;
+}
 #midMain{
     border-right:3px solid white;
     border-left:3px solid white;
-    position:relative;
-    top:0px;
-    float:left;
+    position:fixed;
+    left:25%;
     width:50%;
     height:80vh;
     z-index:0;
@@ -214,4 +234,13 @@ ul#main .sub11 li:hover .sub111{
     font-family:"Roboto";
     padding:4px;
     margin-left:20px;
+}
+.regPage{
+    margin-bottom:100px;
+    position:fixed;
+    left:360px;
+}
+#infoPage{
+    position:fixed;
+    left:400px;
 }
